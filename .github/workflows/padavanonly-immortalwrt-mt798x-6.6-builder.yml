@@ -10,19 +10,19 @@
 # See /LICENSE for more information.
 #
 
-name: padavanonly-immortalwrt-24.10-6.6-builder
+name: padavanonly-immortalwrt-mt798x-6.6-builder
 
 on:
   repository_dispatch:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-24.10
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
   REPO_BRANCH: openwrt-24.10-6.6
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: padavanonly-immortalwrt-mt798x-24.10-6.6.config
+  CONFIG_FILE: padavanonly-immortalwrt-mt798x-6.6.config
   DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part5-24.10-6.6.sh
+  DIY_P2_SH: diy-part5-6.6.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
