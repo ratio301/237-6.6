@@ -10,14 +10,14 @@
 # See /LICENSE for more information.
 #
 
-name: padavanonly-immortalwrt-2410-builder
+name: padavanonly-immortalwrt-mt798x-2410-builder
 
 on:
   repository_dispatch:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-24.10
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
   REPO_BRANCH: 2410
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: padavanonly-immortalwrt-mt798x-2410.config
@@ -26,7 +26,7 @@ env:
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
-  FIRMWARE_TAG: padavanonly-237-2410
+  FIRMWARE_TAG: padavanonly-237-mt798x-2410
   TZ: Asia/Shanghai
 
 jobs:
